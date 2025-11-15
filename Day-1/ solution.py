@@ -13,11 +13,8 @@ class Solution:
         return str_x == str_x[::-1]
     
 
-# Approach 2 — Reverse the integer numerically
-
-
-class Solution:
-    def isPalindrome(self, x: int) -> bool:
+    # Approach 2 — Reverse the integer numerically
+    def isPalindromeReversewise(self, x: int) -> bool:
         # Negative numbers are not palindromes
         if x < 0:
             return False
@@ -34,3 +31,5 @@ class Solution:
         
         # Check if the original number is equal to the reversed number
         return original == reversed_num
+
+
