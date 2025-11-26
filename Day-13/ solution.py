@@ -1,6 +1,17 @@
 from typing import List
 
 class Solution:
+
+    def bruiteforce(self, numbers: List[int], target: int) -> List[int]:
+        answer =[0]*2
+        for i in range(len(numbers)):
+            for j in range(i+1, len(numbers)):
+                if numbers[i] + numbers[j] == target:
+                    answer[0] = i + 1
+                    answer[1] = j + 1
+                    return answer
+        return answer
+    
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         answer =[0]*2
         start = 0
