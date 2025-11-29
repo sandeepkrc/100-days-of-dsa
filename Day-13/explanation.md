@@ -1,7 +1,5 @@
 # Two Sum II — Explanation
 
-## Problem Statement
-Given a sorted array `numbers` and a target value `target`, find two numbers in the array that add up to `target`. Return their indices as a 1-based array.
 
 ## Approach
 ### Two-Pointer Technique
@@ -40,26 +38,6 @@ Given a sorted array `numbers` and a target value `target`, find two numbers in 
 - **Brute Force Process**:
   - Check pairs `(0, 1)`, `(0, 2)`, `(0, 3)`, `(1, 2)`, etc.
   - Find that `numbers[0] + numbers[1] = 2 + 7 = 9`, return `[1, 2]`.
-- **Output**: `[1, 2]`
-
-### Example 2:
-- **Input**: `numbers = [2, 3, 4]`, `target = 6`
-- **Two-Pointer Process**:
-  - Initialize `start = 0`, `end = 2`.
-  - `numbers[0] + numbers[2] = 2 + 4 = 6`, return `[1, 3]`.
-- **Brute Force Process**:
-  - Check pairs `(0, 1)`, `(0, 2)`, `(1, 2)`.
-  - Find that `numbers[0] + numbers[2] = 2 + 4 = 6`, return `[1, 3]`.
-- **Output**: `[1, 3]`
-
-### Example 3:
-- **Input**: `numbers = [-1, 0]`, `target = -1`
-- **Two-Pointer Process**:
-  - Initialize `start = 0`, `end = 1`.
-  - `numbers[0] + numbers[1] = -1 + 0 = -1`, return `[1, 2]`.
-- **Brute Force Process**:
-  - Check pair `(0, 1)`.
-  - Find that `numbers[0] + numbers[1] = -1 + 0 = -1`, return `[1, 2]`.
 - **Output**: `[1, 2]`
 
 ---
