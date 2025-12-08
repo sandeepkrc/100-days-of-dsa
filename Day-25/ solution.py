@@ -13,7 +13,8 @@ class Solution:
                 right = mid
                 
         return left
-# Example usage:
+
+
 s=Solution()
 print(s.findPeakElement([1,2,3,1]))  # Output: 2
 print(s.findPeakElement([1,2,1,3,5,6,4]))  # Output: 5
