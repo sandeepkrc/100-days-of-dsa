@@ -19,7 +19,7 @@ class Solution:
         
         return nums[left]
     
-# Example usage:
+
 s=Solution()
 print(s.singleNonDuplicate([1,1,2,3,3,4,4,8,8]))  # Output: 2
 print(s.singleNonDuplicate([3,3,7,7,10,11,11]))  # Output: 10
